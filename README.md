@@ -1,2 +1,2 @@
 # .conf.d
-Store the conf 
+Store my configuration
