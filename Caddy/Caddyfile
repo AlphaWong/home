@@ -2,7 +2,4 @@
     root /home/pi/public
     browse
     gzip
-    #tls {
-    #    dns cloudflare
-    #}
 }
