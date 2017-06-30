@@ -1,0 +1,57 @@
+#Alpha
+[user]
+	name = <name>
+	email = <email>
+
+[alias]
+  aa = add -A
+  ca = commit -a
+  cm = commit -m
+  ci = commit --interactive
+  co = checkout
+  fo = fetch
+  st = !git status && echo && git l origin..HEAD
+  ls = ls-files --stage --abbrev
+  up = remote update
+  info = show-ref -h
+  # d = whatchanged -p
+  l = log --graph --oneline --all --decorate
+  ll = log --all --decorate --oneline --graph
+  tt = log --all --decorate --oneline --graph
+  lg = log --graph --decorate --pretty=oneline --all
+  b = branch -av
+  t = tag -n
+  who = shortlog -s --
+  graph = log --graph --oneline --all --decorate
+  f = !git fetch --all --tags --verbose && git remote --verbose update --prune
+  r = rebase -i HEAD~10
+  stat = log --oneline --shortstat
+  # e.g. git track v2.0.0 kites/v2.0.0
+  track = checkout --track -b
+
+  s = status -sb
+  a = add
+  d = diff --word-diff
+
+[apply]
+  whitespace = strip
+
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+
+[branch "master"]
+  remote = origin
+  merge = refs/heads/master
+
+[push]
+  default = current
+[core]
+	editor = nvim
+	excludesfile = /Users/alpha/.gitignore_global
+	trustExitCode = true
+[commit]
+	template = /Users/alpha/.stCommitMsg
+[merge]
+	tool = kdiff3
