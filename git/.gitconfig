@@ -18,7 +18,7 @@
   l = log --graph --oneline --all --decorate
   ll = log --all --decorate --oneline --graph
   tt = log --all --decorate --oneline --graph
-  lg = log --graph --decorate --pretty=oneline --all
+  lg = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
   b = branch -av
   t = tag -n
   who = shortlog -s --
