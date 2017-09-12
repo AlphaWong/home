@@ -1,6 +1,14 @@
 # .conf.d
 Store my configuration
 
+# diff-so-fancy
+```bash
+# Setting for the new UTF-8 terminal support in Lion
+export LC_CTYPE="en_US.UTF-8"
+export LC_ALL="en_US.UTF-8"
+```
+
+
 # Supervisor configuration
 In this guide I'll assume you have a functionning supervisor installation. It will allow us to execute caddy as a daemon. First of all we'll edit the /etc/supervisor/supervisord.conf and add this line under the [supervisord] section :
 
