@@ -2,7 +2,6 @@
 [user]
 	name = <name>
 	email = <email>
-
 [alias]
   aa = add -A
   ca = commit -a
@@ -18,7 +17,7 @@
   l = log --graph --oneline --all --decorate
   ll = log --all --decorate --oneline --graph
   tt = log --all --decorate --oneline --graph
-  lg = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
+  lg = log --graph --decorate --pretty=oneline --all
   b = branch -av
   t = tag -n
   who = shortlog -s --
@@ -28,10 +27,14 @@
   stat = log --oneline --shortstat
   # e.g. git track v2.0.0 kites/v2.0.0
   track = checkout --track -b
+  lg1 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
+  lg2 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
+  lg = !"git lg1"
 
   s = status -sb
   a = add
   d = diff --word-diff
+
 
 [apply]
   whitespace = strip
@@ -40,6 +43,7 @@
   diff = auto
   status = auto
   branch = auto
+        ui = true
 
 [branch "master"]
   remote = origin
@@ -48,10 +52,30 @@
 [push]
   default = current
 [core]
-	editor = nvim
-	excludesfile = /Users/alpha/.gitignore_global
-	trustExitCode = true
+        editor = nvim
+        excludesfile = /Users/alpha/.gitignore_global
+        trustExitCode = true
+        pager = diff-so-fancy | less --tabs=4 -RFX
 [commit]
-	template = /Users/alpha/.stCommitMsg
+        template = /Users/alpha/.stCommitMsg
 [merge]
-	tool = kdiff3
+        tool = kdiff3
+[difftool "sourcetree"]
+        cmd = /Applications/kdiff3.app/Contents/MacOS/kdiff3 \"$LOCAL\" \"$REMOTE\"
+        path = 
+[mergetool "sourcetree"]
+        cmd = /Applications/kdiff3.app/Contents/MacOS/kdiff3 \"$BASE\" \"$LOCAL\" \"$REMOTE\" -o \"$MERGED\"
+        trustExitCode = true
+[color "diff-highlight"]
+        oldNormal = red bold
+        oldHighlight = red bold 52
+        newNormal = green bold
+        newHighlight = green bold 22
+[color "diff"]
+        meta = 227
+        frag = magenta bold
+        commit = 227 bold
+        old = red bold
+        new = green bold
+        whitespace = red reverse
+
