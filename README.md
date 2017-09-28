@@ -12,6 +12,11 @@ Install Plugins:
 ```
 
 # diff-so-fancy
+Install
+```sh
+npm i -g diff-so-fancy
+```
+
 ```bash
 # Setting for the new UTF-8 terminal support in Lion
 export LC_CTYPE="en_US.UTF-8"
