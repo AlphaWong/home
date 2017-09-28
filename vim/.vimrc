@@ -41,6 +41,8 @@ Plugin 'google/vim-glaive'
 
 Plugin 'Yggdroot/indentLine'
 
+Plug 'fatih/vim-go'
+
 call vundle#end()            " required
 filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:
