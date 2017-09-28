@@ -12,7 +12,7 @@ Install Plugins:
 ```
 
 # diff-so-fancy
-Install
+Installation
 ```sh
 npm i -g diff-so-fancy
 ```
@@ -23,12 +23,24 @@ export LC_CTYPE="en_US.UTF-8"
 export LC_ALL="en_US.UTF-8"
 ```
 
-You can customize the user to the one you want. As I said earlier, caddy now doesn't need root privileges to bind to low ports, so any user will do (prefer a user with few rights). Caddy is now ready to be started by supervisor ! Simply add the program into supervisor and enjoy.
+# ccat
 ```sh
-supervisorctl reread
-supervisorctl add caddy
-supervisorctl start caddy
+go get -u github.com/jingweno/ccat
+```
+It's recommended to alias ccat to cat:
+```sh
+alias cat=ccat
 ```
 
+# tldr
+Installation
+```sh
+npm install -g tldr
+```
+# the fuck
+on-my-zsh
+```bash
+plugins=(git bundler osx rake ruby thefuck)
+```
 # Reference
 [http://depado.markdownblog.com/2015-12-07-setting-up-caddy-server-on-debian](http://depado.markdownblog.com/2015-12-07-setting-up-caddy-server-on-debian)
