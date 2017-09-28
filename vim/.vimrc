@@ -41,7 +41,11 @@ Plugin 'google/vim-glaive'
 
 Plugin 'Yggdroot/indentLine'
 
-Plug 'fatih/vim-go'
+Plugin 'fatih/vim-go'
+
+Plugin 'airblade/vim-gitgutter'
+
+Plugin 'shougo/neocomplcache.vim'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -59,7 +63,6 @@ filetype plugin indent on    " required
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
-
 
 " Basic setup
 set nu
@@ -83,4 +86,3 @@ augroup autoformat_settings
   autocmd FileType java AutoFormatBuffer google-java-format
   autocmd FileType python AutoFormatBuffer yapf
 augroup END
-
