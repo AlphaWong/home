@@ -9,6 +9,7 @@ Install Plugins:
 ```sh
 # Launch vim and run
 :PluginInstall
+:GoInstallBinaries
 ```
 
 # diff-so-fancy
