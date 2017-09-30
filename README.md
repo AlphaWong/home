@@ -18,7 +18,16 @@ brew install macvim --with-lua
 # If you haven't launched Xcode after updating it, do so now. Xcode will ask for permission to install additional components. 
 # Let it install those components. Once that is done, try the MacVim build again.
 ```
+```
+# use brew vim if present
+ /usr/local/bin/vim --version > /dev/null 2>&1
+ BREW_VIM_INSTALLED=$?
 
+ if [ $BREW_VIM_INSTALLED -eq 0 ]; then
+
+    alias vi="/usr/local/bin/vim"
+ fi
+```
 
 # diff-so-fancy
 Installation
