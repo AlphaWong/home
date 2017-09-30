@@ -20,13 +20,12 @@ brew install macvim --with-lua
 ```
 ```
 # use brew vim if present
- /usr/local/bin/vim --version > /dev/null 2>&1
- BREW_VIM_INSTALLED=$?
+/usr/local/bin/vim --version > /dev/null 2>&1
+BREW_VIM_INSTALLED=$?
 
- if [ $BREW_VIM_INSTALLED -eq 0 ]; then
-
-    alias vi="/usr/local/bin/vim"
- fi
+if [ $BREW_VIM_INSTALLED -eq 0 ]; then
+   alias vi="/usr/local/bin/vim"
+fi
 ```
 
 # diff-so-fancy
