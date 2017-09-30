@@ -42,7 +42,7 @@ Plugin 'google/vim-codefmt'
 " `:help :Glaive` for usage.
 Plugin 'google/vim-glaive'
 
-Plugin 'Yggdroot/indentLine'
+"Plugin 'Yggdroot/indentLine'
 
 Plugin 'fatih/vim-go'
 
