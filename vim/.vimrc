@@ -1,3 +1,4 @@
+set autoread
 set backspace=indent,eol,start
 
 set nocompatible              " be iMproved, required
