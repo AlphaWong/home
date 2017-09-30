@@ -1,3 +1,5 @@
+set backspace=indent,eol,start
+
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
@@ -45,7 +47,7 @@ Plugin 'fatih/vim-go'
 
 Plugin 'airblade/vim-gitgutter'
 
-Plugin 'shougo/neocomplcache.vim'
+" Plugin 'shougo/neocomplcache.vim'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
