@@ -12,6 +12,14 @@ Install Plugins:
 :GoInstallBinaries
 ```
 
+```
+brew install macvim --with-lua
+
+# If you haven't launched Xcode after updating it, do so now. Xcode will ask for permission to install additional components. 
+# Let it install those components. Once that is done, try the MacVim build again.
+```
+
+
 # diff-so-fancy
 Installation
 ```sh
