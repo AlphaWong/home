@@ -1,3 +1,8 @@
+" Fix the color issue
+set background=dark
+set t_Co=256
+
+" Fix the backspace feature
 set autoread
 set backspace=indent,eol,start
 
