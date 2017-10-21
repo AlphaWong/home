@@ -9,6 +9,18 @@ set backspace=indent,eol,start
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
+" Basic setup
+set nu
+syntax on
+" set spell spelllang=en_us
+
+filetype plugin indent on
+
+" Tab to space
+set tabstop=2
+set shiftwidth=2
+set expandtab
+
 " Install
 " git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
@@ -71,18 +83,6 @@ filetype plugin indent on    " required
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
-
-" Basic setup
-set nu
-syntax on
-" set spell spelllang=en_us
-
-filetype plugin indent on
-
-" Tab to space
-set tabstop=2
-set shiftwidth=2
-set expandtab
 
 augroup autoformat_settings
   autocmd FileType bzl AutoFormatBuffer buildifier
