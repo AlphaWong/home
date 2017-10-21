@@ -14,8 +14,6 @@ set nu
 syntax on
 " set spell spelllang=en_us
 
-filetype plugin indent on
-
 " Tab to space
 set tabstop=2
 set shiftwidth=2
@@ -83,6 +81,8 @@ filetype plugin indent on    " required
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
+
+filetype plugin indent on
 
 augroup autoformat_settings
   autocmd FileType bzl AutoFormatBuffer buildifier
