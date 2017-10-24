@@ -1,6 +1,11 @@
 # .conf.d
 Store my configuration
 
+# neovim config
+```sh
+ln -s ~/.vimrc ~/.config/nvim/init.vim
+```
+
 # vim Vundle
 ```sh
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
