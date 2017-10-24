@@ -17,6 +17,9 @@ Install Plugins:
 :GoInstallBinaries
 ```
 
+# vim reference
+https://github.com/google/vim-codefmt
+
 ```
 brew install macvim --with-lua
 
