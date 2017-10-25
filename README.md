@@ -67,5 +67,17 @@ on-my-zsh
 ```bash
 plugins=(git bundler osx rake ruby thefuck)
 ```
+# tig
+https://github.com/jonas/tig
+
+# htop
+https://github.com/hishamhm/htop
+
+# glances
+https://github.com/nicolargo/glances
+
+# upterm
+https://github.com/railsware/upterm
+
 # Reference
 [http://depado.markdownblog.com/2015-12-07-setting-up-caddy-server-on-debian](http://depado.markdownblog.com/2015-12-07-setting-up-caddy-server-on-debian)
