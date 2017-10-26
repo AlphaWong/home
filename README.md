@@ -1,5 +1,16 @@
-# .conf.d
+# . Objective
 Store my configuration
+
+# PacAUR
+```sh
+sudo pacman -S pacaur
+```
+
+# Set default editor
+```sh
+export EDITOR='nvim' 
+export VISUAL='nvim'
+```
 
 # neovim config
 ```sh
