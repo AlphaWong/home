@@ -1,4 +1,4 @@
-# . Objective
+# Objective
 Store my configuration
 
 # PacAUR
