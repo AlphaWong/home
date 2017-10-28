@@ -7,7 +7,8 @@ sudo pacman -S pacaur
 ```
 # gcin
 ```bash
-# ~/.xinitrc 
+# ~/.xinitrc
+# http://hyperrate.com/thread.php?tid=31637
 
 export LC_CTYPE=en_HK.UTF-8
 export XMODIFIERS=@im=gcin
