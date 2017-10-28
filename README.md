@@ -5,16 +5,33 @@ Store my configuration
 ```sh
 sudo pacman -S pacaur
 ```
+# zshrc
+```bash
+# Alias
+alias vi=nvim
+alias top=glances
+alias cat=ccat
+
+export EDITOR='gvim' 
+export VISUAL='gvim'
+
+# Go
+export GOROOT=$HOME/go
+export GOPATH=$HOME/works
+export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+
+ZSH_THEME="amuse"
+```
+
 # gcin
 ```bash
-# ~/.xinitrc
+# ~/.xprofile 
 # http://hyperrate.com/thread.php?tid=31637
 
-export LC_CTYPE=en_HK.UTF-8
-export XMODIFIERS=@im=gcin
 export GTK_IM_MODULE=gcin
 export QT_IM_MODULE=gcin
-
+export XMODIFIERS="@im=gcin"
+gcin &
 ```
 
 # Set default editor
