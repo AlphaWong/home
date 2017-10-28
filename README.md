@@ -5,6 +5,16 @@ Store my configuration
 ```sh
 sudo pacman -S pacaur
 ```
+# gcin
+```bash
+# ~/.xinitrc 
+
+export LC_CTYPE=en_HK.UTF-8
+export XMODIFIERS=@im=gcin
+export GTK_IM_MODULE=gcin
+export QT_IM_MODULE=gcin
+
+```
 
 # Set default editor
 ```sh
