@@ -12,8 +12,8 @@ alias vi=nvim
 alias top=glances
 alias cat=ccat
 
-export EDITOR='gvim' 
-export VISUAL='gvim'
+export EDITOR='nvim' 
+export VISUAL='nvim'
 
 # Go
 export GOROOT=$HOME/go
