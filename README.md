@@ -27,6 +27,7 @@ ZSH_THEME="amuse"
 ```bash
 # ~/.xprofile 
 # http://hyperrate.com/thread.php?tid=31637
+# https://manjaro-zh.blogspot.hk/2015/05/manjaro-linux-gcin.html
 
 export GTK_IM_MODULE=gcin
 export QT_IM_MODULE=gcin
