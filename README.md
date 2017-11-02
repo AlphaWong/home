@@ -9,7 +9,7 @@ sudo pacman -S pacaur
 ```bash
 # Alias
 alias vi=nvim
-alias top=glances
+alias top=htop
 alias cat=ccat
 
 export EDITOR='nvim' 
