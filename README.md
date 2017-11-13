@@ -1,6 +1,9 @@
 # Objective
 Store my configuration
 
+# ssh
+ssh-keygen -t ed25519 -C "email"
+
 # PacAUR
 ```sh
 sudo pacman -S pacaur
