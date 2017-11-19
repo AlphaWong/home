@@ -18,6 +18,7 @@ alias cat=ccat
 
 export EDITOR='nvim' 
 export VISUAL='nvim'
+export TERM='terminator'
 
 # Go
 export GOROOT=$HOME/go
