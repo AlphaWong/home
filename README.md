@@ -15,6 +15,7 @@ sudo pacman -S pacaur
 alias vi=nvim
 alias top=htop
 alias cat=ccat
+alias open=nautilus
 
 export EDITOR='nvim' 
 export VISUAL='nvim'
