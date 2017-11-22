@@ -113,6 +113,12 @@ on-my-zsh
 ```bash
 plugins=(git bundler osx rake ruby thefuck)
 ```
+
+# Image compress
+1. zopflipng-git (png)
+1. https://github.com/mozilla/mozjpeg (jpg)
+1. cwebp (webp)
+
 # tig
 https://github.com/jonas/tig
 
