@@ -116,7 +116,11 @@ plugins=(git bundler osx rake ruby thefuck)
 
 # Image compress
 1. zopflipng-git (png)
+  1. install `pacaur -S zopflipng-git`
+  1. run `zopflipng -m infile.png outfile.png`
 1. https://github.com/mozilla/mozjpeg (jpg)
+  1. install `pacaur -S mozjpeg`
+  1. run `cjpeg -optimize in.png > out.jpg `
 1. cwebp (webp)
 
 # tig
