@@ -1,11 +1,11 @@
-" This Source Code Form is subject to the terms of the Mozilla Public
+" Source Code Form is subject to the terms of the Mozilla Public
 " License, v. 2.0. If a copy of the MPL was not distributed with this
 " file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 " https://github.com/AlphaWong
 
 " Fix the color issue
-set background=dark
+"set background=dark
 set t_Co=256
 
 " Fix the backspace feature
@@ -18,6 +18,7 @@ filetype off                  " required
 " Basic setup
 set nu
 syntax on
+
 " set spell spelllang=en_us
 
 " Tab to space
@@ -69,7 +70,9 @@ Plugin 'fatih/vim-go'
 
 Plugin 'airblade/vim-gitgutter'
 
-" Plugin 'shougo/neocomplcache.vim'
+Plugin 'vim-airline/vim-airline'
+
+Plugin 'vim-airline/vim-airline-themes'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -87,6 +90,9 @@ filetype plugin indent on    " required
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
+
+" Set airline theme
+let g:airline_theme='minimalist'
 
 filetype plugin indent on
 
