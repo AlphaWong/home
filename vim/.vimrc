@@ -5,7 +5,6 @@
 " https://github.com/AlphaWong
 
 " Fix the color issue
-"set background=dark
 set t_Co=256
 
 " Fix the backspace feature
@@ -74,6 +73,8 @@ Plugin 'vim-airline/vim-airline'
 
 Plugin 'vim-airline/vim-airline-themes'
 
+Plugin 'morhetz/gruvbox'
+
 call vundle#end()            " required
 filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:
@@ -93,6 +94,10 @@ filetype plugin indent on    " required
 
 " Set airline theme
 let g:airline_theme='minimalist'
+
+" Set vim theme
+colorscheme gruvbox
+set background=dark
 
 filetype plugin indent on
 
