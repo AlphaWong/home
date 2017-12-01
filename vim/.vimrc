@@ -96,6 +96,9 @@ filetype plugin indent on    " required
 " Set airline theme
 let g:airline_theme='minimalist'
 
+" Set goimports
+let g:go_fmt_command = "goimports"
+
 " Set vim theme
 colorscheme gruvbox
 set background=dark
