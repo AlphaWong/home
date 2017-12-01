@@ -59,6 +59,7 @@ Plugin 'VundleVim/Vundle.vim'
 " Make sure you use single quotes
 Plugin 'google/vim-maktaba'
 Plugin 'google/vim-codefmt'
+
 " Also add Glaive, which is used to configure codefmt's maktaba flags. See
 " `:help :Glaive` for usage.
 Plugin 'google/vim-glaive'
