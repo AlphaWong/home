@@ -63,6 +63,9 @@ Install Plugins:
 :GoInstallBinaries
 ```
 
+# vim tree
+https://github.com/scrooloose/nerdtree
+
 # vim reference
 https://github.com/google/vim-codefmt
 
