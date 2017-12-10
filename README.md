@@ -97,6 +97,11 @@ export LC_CTYPE="en_US.UTF-8"
 export LC_ALL="en_US.UTF-8"
 ```
 
+# go metalinter
+```sh
+go get -u gopkg.in/alecthomas/gometalinter.v1
+```
+
 # ccat
 ```sh
 go get -u github.com/jingweno/ccat
