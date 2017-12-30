@@ -159,6 +159,13 @@ https://github.com/hishamhm/htop
 # glances
 https://github.com/nicolargo/glances
 
+# pip3
+```
+# Set pip3
+export PY_USER_BIN=$(python3 -c 'import site; print(site.USER_BASE + "/bin")')
+export PATH=$PY_USER_BIN:$PATH
+```
+
 # upterm
 https://github.com/railsware/upterm
 
