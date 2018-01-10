@@ -162,6 +162,9 @@ plugins=(git bundler osx rake ruby thefuck)
 1. `find ~ -name game`
 1. https://www.lifewire.com/uses-of-linux-command-find-2201100
 
+# grep cmd
+1. grep -nrw source
+
 # cat
 1. `cat -n filename.txt`
 
