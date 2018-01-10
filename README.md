@@ -9,6 +9,19 @@ ssh-keygen -t ed25519 -C "email"
 ```sh
 sudo pacman -S pacaur
 ```
+# Install all of it
+```
+# core
+pacaur -S zsh neovim docker docker-compose
+
+# utils
+pacaur -S glances fzf-git zopflipng-git mozjpeg tig
+
+# node
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | bash
+npm i -g diff-so-fancy
+```
+
 # zshrc
 ```bash
 # Alias
