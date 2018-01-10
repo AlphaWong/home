@@ -13,9 +13,10 @@ sudo pacman -S pacaur
 ```bash
 # Alias
 alias vi=nvim
-alias top=htop
+alias top=glances
 alias cat=ccat
 alias open=nautilus
+alias fzf=fzf --preview 'cat -n {}'
 
 export EDITOR='nvim' 
 export VISUAL='nvim'
@@ -140,6 +141,16 @@ on-my-zsh
 ```bash
 plugins=(git bundler osx rake ruby thefuck)
 ```
+# fzf-git
+1. `pacaur -S fzf-git`
+1. `fzf --preview 'cat -n {}' `
+
+# find cmd
+1. `find ~ -name game`
+1. https://www.lifewire.com/uses-of-linux-command-find-2201100
+
+# cat
+1. `cat -n filename.txt`
 
 # Image compress
 1. zopflipng-git (png)
