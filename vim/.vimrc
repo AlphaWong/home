@@ -7,6 +7,9 @@
 " Fix the color issue
 set t_Co=256
 
+" Fix keyboard issue
+set term=xterm
+
 " Fix the backspace feature
 set autoread
 set backspace=indent,eol,start
