@@ -24,15 +24,19 @@ npm i -g diff-so-fancy
 
 # zshrc
 ```bash
+# Fix home end button
+bindkey  "^[[H"   beginning-of-line
+bindkey  "^[[F"   end-of-line
+
 # Alias
-alias vi=nvim
+alias vi=vim
 alias top=glances
 alias cat=ccat
 alias open=nautilus
 alias fzf=fzf --preview 'cat -n {}'
 
-export EDITOR='nvim' 
-export VISUAL='nvim'
+export EDITOR='vim' 
+export VISUAL='vim'
 export TERM='terminator'
 
 # Go
