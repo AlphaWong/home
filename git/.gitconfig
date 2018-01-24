@@ -4,8 +4,8 @@
  
 # https://github.com/AlphaWong/
 [user]
-  name = <name>
-  email = <email>
+  name = alpha.wong
+  email = alpha.wong@lalamove.com
 [alias]
   aa = add -A
   ca = commit -a
@@ -63,14 +63,6 @@
   pager = diff-so-fancy | less --tabs=4 -RFX
 [commit]
   template = /Users/alpha/.stCommitMsg
-[merge]
-  tool = kdiff3
-[difftool "sourcetree"]
-  cmd = /Applications/kdiff3.app/Contents/MacOS/kdiff3 \"$LOCAL\" \"$REMOTE\"
-  path = 
-[mergetool "sourcetree"]
-  cmd = /Applications/kdiff3.app/Contents/MacOS/kdiff3 \"$BASE\" \"$LOCAL\" \"$REMOTE\" -o \"$MERGED\"
-  trustExitCode = true
 [color "diff-highlight"]
   oldNormal = red bold
   oldHighlight = red bold 52
@@ -83,3 +75,9 @@
   old = red bold
   new = green bold
   whitespace = red reverse
+
+[merge]
+	tool = vimdiff
+	conflictstyle = diff3
+[mergetool]
+	prompt = false
