@@ -47,6 +47,13 @@ export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 ZSH_THEME="amuse"
 ```
 
+# Install font
+Reference: http://ehellman.github.io/blog/2013/04/16/manually-install-a-font-in-arch-linux/
+```sh
+mv font.ttf /usr/share/fonts/
+fc-cache -vf
+```
+
 # VPN auto start
 ```
 vi ~/.kde4/Autostart
@@ -80,8 +87,8 @@ gcin &
 
 # Set default editor
 ```sh
-export EDITOR='nvim' 
-export VISUAL='nvim'
+export EDITOR='vim' 
+export VISUAL='vim'
 ```
 
 # neovim config
