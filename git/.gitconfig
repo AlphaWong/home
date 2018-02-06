@@ -58,11 +58,11 @@
   default = current
 [core]
   editor = vim
-  excludesfile = /Users/alpha/.gitignore_global
+  excludesfile = /Users/$(whoami)/.gitignore_global
   trustExitCode = true
   pager = diff-so-fancy | less --tabs=4 -RFX
 [commit]
-  template = /Users/alpha/.stCommitMsg
+  template = /Users/$whoami/.stCommitMsg
 [color "diff-highlight"]
   oldNormal = red bold
   oldHighlight = red bold 52
