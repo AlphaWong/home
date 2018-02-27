@@ -15,11 +15,28 @@ sudo pacman -S pacaur
 pacaur -S zsh neovim docker docker-compose
 
 # utils
-pacaur -S glances fzf-git zopflipng-git mozjpeg tig
+pacaur -S glances fzf-git zopflipng-git mozjpeg tig xdotool ttyrec ttygif
 
 # node
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | bash
 npm i -g diff-so-fancy
+```
+
+# ttf gif (https://github.com/icholy/ttygif)
+```
+1. Create ttyrec recording
+
+$ ttyrec myrecording
+
+      Hit CTRL-D or type exit when done recording.
+
+2. Convert to gif
+
+$ ttygif myrecording
+
+On OSX optionally you can set a -f flag which will bypass cropping which is needed for terminal apps which aren't full screen. Both standard Terminal and iTerm apps are supported.
+
+$ ttygif myrecording -f
 ```
 
 # zshrc
@@ -38,6 +55,9 @@ alias fzf=fzf --preview 'cat -n {}'
 export EDITOR='vim' 
 export VISUAL='vim'
 export TERM='terminator'
+
+# ttf
+export WINDOWID=$(xdotool getwindowfocus)
 
 # Go
 export GOROOT=$HOME/go
