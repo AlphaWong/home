@@ -45,6 +45,11 @@ $ ttygif myrecording -f
 bindkey  "^[[H"   beginning-of-line
 bindkey  "^[[F"   end-of-line
 
+# Kubectl
+if [ $commands[kubectl] ]; then
+  source <(kubectl completion zsh)
+fi
+
 # Alias
 alias vi=vim
 alias top=glances
