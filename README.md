@@ -15,7 +15,7 @@ sudo pacman -S pacaur
 pacaur -S zsh neovim docker docker-compose
 
 # utils
-pacaur -S glances fzf-git zopflipng-git mozjpeg tig xdotool ttyrec ttygif
+pacaur -S glances fzf-git zopflipng-git mozjpeg tig xdotool ttyrec ttygif ripgrep
 
 # node
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | bash
@@ -37,6 +37,20 @@ $ ttygif myrecording
 On OSX optionally you can set a -f flag which will bypass cropping which is needed for terminal apps which aren't full screen. Both standard Terminal and iTerm apps are supported.
 
 $ ttygif myrecording -f
+```
+
+# ~/.config/powershell/profile.ps1 ()
+https://github.com/PowerShell/PowerShell/blob/master/docs/installation/linux.md#arch-linux
+```ps1
+# Alias list
+Set-Alias vi vim
+Set-Alias g git
+Set-Alias top glances
+
+# Env va
+$Env:GOPATH = "$HOME/go"
+$Env:GOROOT= "$HOME/works"
+$Env:Path += "$GOROOT/bin:$GOPATH/bin"
 ```
 
 # zshrc
