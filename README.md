@@ -15,7 +15,10 @@ sudo pacman -S pacaur
 pacaur -S zsh neovim docker docker-compose
 
 # utils
-pacaur -S glances fzf-git zopflipng-git mozjpeg tig xdotool ttyrec ttygif ripgrep
+pacaur -S glances fzf-git zopflipng-git mozjpeg tig xdotool ttyrec ttygif ripgrep powershell-bin
+
+# Change shell
+`sudo chsh`
 
 # node
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | bash
@@ -42,15 +45,26 @@ $ ttygif myrecording -f
 # ~/.config/powershell/profile.ps1
 https://github.com/PowerShell/PowerShell/blob/master/docs/installation/linux.md#arch-linux
 ```ps1
+Install-Module posh-git -Scope CurrentUser
+Install-Module oh-my-posh -Scope CurrentUser
+```
+```ps1
 # Alias list
-Set-Alias vi vim
-Set-Alias g git
-Set-Alias top glances
+set-alias vi vim
+set-alias g git
+set-alias top glances
+set-alias gss "g status"
 
-# Env va
-$Env:GOPATH = "$HOME/go"
-$Env:GOROOT= "$HOME/works"
-$Env:Path += "$GOROOT/bin:$GOPATH/bin"
+# Env var
+$env:GOPATH = "$HOME/works"
+$env:GOROOT = "$HOME/go"
+$env:Path += "$GOROOT/bin:$GOPATH/bin"
+
+# git
+import-module posh-git
+import-module oh-my-posh
+set-theme Paradox
+#
 ```
 
 # zshrc
