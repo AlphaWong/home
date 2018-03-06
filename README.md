@@ -39,7 +39,7 @@ On OSX optionally you can set a -f flag which will bypass cropping which is need
 $ ttygif myrecording -f
 ```
 
-# ~/.config/powershell/profile.ps1 ()
+# ~/.config/powershell/profile.ps1
 https://github.com/PowerShell/PowerShell/blob/master/docs/installation/linux.md#arch-linux
 ```ps1
 # Alias list
