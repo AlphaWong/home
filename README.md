@@ -15,7 +15,7 @@ sudo pacman -S pacaur
 pacaur -S zsh neovim docker docker-compose
 
 # utils
-pacaur -S glances fzf-git zopflipng-git mozjpeg tig xdotool ttyrec ttygif ripgrep powershell-bin
+pacaur -S glances fzf-git zopflipng-git mozjpeg tig xdotool ttyrec ttygif ripgrep powershell-bin ctop-bin
 
 # Change shell
 `sudo chsh`
@@ -40,6 +40,39 @@ $ ttygif myrecording
 On OSX optionally you can set a -f flag which will bypass cropping which is needed for terminal apps which aren't full screen. Both standard Terminal and iTerm apps are supported.
 
 $ ttygif myrecording -f
+```
+
+# bash-it
+```
+# Git alias
+alias g="git"
+alias gss="git status"
+alias gup="git pull --rebase"
+alias ga="git add"
+alias gc="git commit"
+alias gco="git checkout"
+
+# Fix home end button
+bindkey  "^[[H"   beginning-of-line
+bindkey  "^[[F"   end-of-line
+
+# Alias
+alias vi=vim
+alias top=glances
+alias cat=ccat
+alias fzf=fzf --preview 'cat -n {}'
+
+export EDITOR='vim' 
+export VISUAL='vim'
+export TERM='terminator'
+
+# ttf
+export WINDOWID=$(xdotool getwindowfocus)
+
+# Go
+export GOROOT=$HOME/go
+export GOPATH=$HOME/works
+export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 ```
 
 # ~/.config/powershell/profile.ps1
