@@ -52,15 +52,11 @@ alias ga="git add"
 alias gc="git commit"
 alias gco="git checkout"
 
-# Fix home end button
-bindkey  "^[[H"   beginning-of-line
-bindkey  "^[[F"   end-of-line
-
 # Alias
 alias vi=vim
 alias top=glances
 alias cat=ccat
-alias fzf=fzf --preview 'cat -n {}'
+alias fzf="fzf --preview 'cat -n {}'"
 
 export EDITOR='vim' 
 export VISUAL='vim'
