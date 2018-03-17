@@ -79,6 +79,8 @@ Plugin 'vim-airline/vim-airline-themes'
 
 Plugin 'morhetz/gruvbox'
 
+Plugin 'prettier/vim-prettier'
+
 call vundle#end()            " required
 filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:
@@ -114,7 +116,7 @@ augroup autoformat_settings
   autocmd FileType dart AutoFormatBuffer dartfmt
   autocmd FileType go AutoFormatBuffer gofmt
   autocmd FileType gn AutoFormatBuffer gn
-  autocmd FileType html,css,json AutoFormatBuffer js-beautify
+  autocmd BufWritePre *.js,*.html,*.css,*.json PrettierAsync
   autocmd FileType java AutoFormatBuffer google-java-format
   autocmd FileType python AutoFormatBuffer yapf
 augroup END
