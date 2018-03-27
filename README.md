@@ -45,12 +45,17 @@ $ ttygif myrecording -f
 # bash-it
 ```
 # Git alias
+EDITOR=vim
+alias vi="vim"
 alias g="git"
 alias gss="git status"
-alias gup="git pull --rebase"
-alias ga="git add"
+alias gp="git push"
 alias gc="git commit"
+alias ga="git add"
+alias gt="git tag"
 alias gco="git checkout"
+alias gr="git rebase"
+alias gup="git pull --rebase"
 
 # Alias
 alias vi=vim
