@@ -12,10 +12,10 @@ sudo pacman -S pacaur
 # Install all of it
 ```
 # core
-pacaur -S zsh neovim docker docker-compose
+yay -S zsh neovim docker docker-compose
 
 # utils
-pacaur -S glances fzf-git zopflipng-git mozjpeg tig xdotool ttyrec ttygif ripgrep powershell-bin ctop-bin
+yay -S docker docker-compose glances fzf-git zopflipng-git mozjpeg tig xdotool ttyrec ttygif ripgrep powershell-bin ctop-bin
 
 # Change shell
 `sudo chsh`
