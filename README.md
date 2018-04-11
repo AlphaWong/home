@@ -14,8 +14,11 @@ sudo pacman -S pacaur
 # core
 yay -S zsh neovim docker docker-compose
 
+# tools
+https://github.com/cjbassi/gotop
+
 # utils
-yay -S docker docker-compose glances fzf-git zopflipng-git mozjpeg tig xdotool ttyrec ttygif ripgrep powershell-bin ctop-bin
+yay -S ripgrep docker docker-compose glances fzf-git zopflipng-git mozjpeg tig xdotool ttyrec ttygif ripgrep powershell-bin ctop-bin
 
 # Change shell
 `sudo chsh`
