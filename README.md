@@ -60,6 +60,7 @@ alias gf="git f"
 alias gco="git checkout"
 alias gr="git rebase"
 alias gup="git pull --rebase"
+alias mc="micro"
 
 # Alias
 alias vi=vim
