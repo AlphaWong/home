@@ -17,6 +17,9 @@ yay -S zsh neovim docker docker-compose
 # tools
 https://github.com/cjbassi/gotop
 
+# json
+go get -u github.com/simeji/jid/cmd/jid
+
 # utils
 yay -S ripgrep docker docker-compose glances fzf-git zopflipng-git mozjpeg tig xdotool ttyrec ttygif ripgrep powershell-bin ctop-bin
 
@@ -66,6 +69,7 @@ alias vi=vim
 alias top=glances
 alias cat=ccat
 alias fzf="fzf --preview 'cat -n {}'"
+alias j=jid
 
 export EDITOR='vim' 
 export VISUAL='vim'
