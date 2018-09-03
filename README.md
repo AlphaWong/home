@@ -63,25 +63,31 @@ alias gf="git f"
 alias gco="git checkout"
 alias gr="git rebase"
 alias gup="git pull --rebase"
+alias cat="bat"
+
+# k8s
+alias kk="kubectl"
 
 # Alias
 alias vi=vim
-alias top=glances
-alias cat=ccat
+# alias top=glances
+# alias cat=ccat
 alias fzf="fzf --preview 'cat -n {}'"
-alias j=jid
+alias mi="micro"
 
 export EDITOR='vim' 
 export VISUAL='vim'
-export TERM='terminator'
+# export TERM='terminator'
 
 # ttf
-export WINDOWID=$(xdotool getwindowfocus)
+# export WINDOWID=$(xdotool getwindowfocus)
 
 # Go
 export GOROOT=$HOME/go
 export GOPATH=$HOME/works
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+export GO111MODULE=on
+
 ```
 
 # ~/.config/powershell/profile.ps1
