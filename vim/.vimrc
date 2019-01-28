@@ -77,9 +77,11 @@ Plugin 'vim-airline/vim-airline'
 
 Plugin 'vim-airline/vim-airline-themes'
 
-Plugin 'morhetz/gruvbox'
-
 Plugin 'prettier/vim-prettier'
+
+Plugin 'sheerun/vim-polyglot'
+
+Plugin 'joshdick/onedark.vim'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -105,7 +107,7 @@ let g:airline_theme='minimalist'
 let g:go_fmt_command = "goimports"
 
 " Set vim theme
-colorscheme gruvbox
+" colorscheme onedark
 set background=dark
 
 filetype plugin indent on
