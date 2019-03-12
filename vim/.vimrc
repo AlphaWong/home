@@ -122,3 +122,6 @@ augroup autoformat_settings
   autocmd FileType java AutoFormatBuffer google-java-format
   autocmd FileType python AutoFormatBuffer yapf
 augroup END
+
+" fix for polyglot
+let g:graphql_javascript_tags = []
