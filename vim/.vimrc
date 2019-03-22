@@ -83,6 +83,8 @@ Plugin 'sheerun/vim-polyglot'
 
 Plugin 'joshdick/onedark.vim'
 
+Plugin 'w0rp/ale'
+
 call vundle#end()            " required
 filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:
@@ -109,16 +111,25 @@ let g:go_fmt_command = "goimports"
 " Set vim theme
 " colorscheme onedark
 set background=dark
+set spell spelllang=en_us
+
+let g:ale_linters = {
+\   'javascript': ['standard'],
+\}
+let g:ale_fixers = {'javascript': ['standard']}
+
+let g:ale_lint_on_save = 1
+let g:ale_fix_on_save = 1
 
 filetype plugin indent on
 
 augroup autoformat_settings
   autocmd FileType bzl AutoFormatBuffer buildifier
-  autocmd FileType c,cpp,proto,javascript AutoFormatBuffer clang-format
+  autocmd FileType c,cpp,proto AutoFormatBuffer prettier
   autocmd FileType dart AutoFormatBuffer dartfmt
   autocmd FileType go AutoFormatBuffer gofmt
   autocmd FileType gn AutoFormatBuffer gn
-  autocmd BufWritePre *.js,*.html,*.css,*.json PrettierAsync
+  autocmd BufWritePre *.html,*.css,*.json PrettierAsync
   autocmd FileType java AutoFormatBuffer google-java-format
   autocmd FileType python AutoFormatBuffer yapf
 augroup END
