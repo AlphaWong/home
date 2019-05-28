@@ -29,6 +29,9 @@ yay -S ripgrep docker docker-compose glances fzf-git zopflipng-git mozjpeg tig x
 # node
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | bash
 npm i -g diff-so-fancy
+
+# whistle
+npm install -g whistle
 ```
 
 # ttf gif (https://github.com/icholy/ttygif)
