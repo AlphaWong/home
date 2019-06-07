@@ -91,6 +91,8 @@ export GOPATH=$HOME/works
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 export GO111MODULE=on
 
+# tools
+export PATH="/usr/local/opt/mozjpeg/bin:$PATH"
 ```
 
 # ~/.config/powershell/profile.ps1
@@ -290,8 +292,9 @@ plugins=(git bundler osx rake ruby thefuck)
 1. https://github.com/mozilla/mozjpeg (jpg)
    1. install `pacaur -S mozjpeg`
    1. run `cjpeg -optimize in.png > out.jpg `
+   1. `brew install mozjpeg`
 1. cwebp (webp)
-1. brew install guetzli
+1. ```brew install guetzli```
 1. https://github.com/chrissimpkins/Crunch
 ```console
 brew cask install crunch
