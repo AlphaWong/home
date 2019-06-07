@@ -293,6 +293,9 @@ plugins=(git bundler osx rake ruby thefuck)
 1. cwebp (webp)
 1. brew install guetzli
 1. https://github.com/chrissimpkins/Crunch
+```console
+brew cask install crunch
+```
 # tig
 https://github.com/jonas/tig
 
