@@ -292,6 +292,7 @@ plugins=(git bundler osx rake ruby thefuck)
    1. run `cjpeg -optimize in.png > out.jpg `
 1. cwebp (webp)
 1. brew install guetzli
+1. https://github.com/chrissimpkins/Crunch
 # tig
 https://github.com/jonas/tig
 
