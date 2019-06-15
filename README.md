@@ -1,6 +1,10 @@
 # Objective
 Store my configuration
 
+# oh my zsh
+## theme
+https://github.com/juliuscaesar/unicorn
+
 # ssh
 ```
 ssh-keygen -t ed25519 -C "email"
