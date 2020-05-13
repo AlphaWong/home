@@ -95,6 +95,9 @@ export GOPATH=$HOME/works
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 export GO111MODULE=on
 
+# http server
+alias http="python -m SimpleHTTPServer"
+
 # tools
 export PATH="/usr/local/opt/mozjpeg/bin:$PATH"
 ```
