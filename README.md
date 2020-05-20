@@ -5,6 +5,12 @@ Store my configuration
 ## theme
 https://github.com/juliuscaesar/unicorn
 
+# pwgen
+```
+# 14 is the len of the string
+openssl rand -base64 14
+```
+
 # ssh
 ```
 ssh-keygen -t ed25519 -C "email"
