@@ -5,10 +5,13 @@ Store my configuration
 ## theme
 https://github.com/juliuscaesar/unicorn
 
-# pwgen
+# password generate
 ```
 # 14 is the len of the string
 openssl rand -base64 14
+
+brew install pwgen
+pwgen -sy 10 1
 ```
 
 # ssh
