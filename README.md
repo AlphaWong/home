@@ -1,6 +1,13 @@
 # Objective
 Store my configuration
 
+# macos
+```
+brew install httpie
+brew install gnu-sed grep
+export PATH="/usr/local/opt/grep/libexec/gnubin:/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
+```
+
 # oh my zsh
 ## theme
 https://github.com/juliuscaesar/unicorn
