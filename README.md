@@ -16,6 +16,10 @@ https://github.com/juliuscaesar/unicorn
 1. https://github.com/sindresorhus/pure
 ## font
 1. https://github.com/ryanoasis/nerd-fonts
+### command
+```console
+brew cask install font-go-mono-nerd-font
+```
 
 # password generate
 ```
