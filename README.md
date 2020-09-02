@@ -11,6 +11,11 @@ export PATH="/usr/local/opt/grep/libexec/gnubin:/usr/local/opt/gnu-sed/libexec/g
 # oh my zsh
 ## theme
 https://github.com/juliuscaesar/unicorn
+## prompt
+1. https://github.com/starship/starship
+1. https://github.com/sindresorhus/pure
+## font
+1. https://github.com/ryanoasis/nerd-fonts
 
 # password generate
 ```
