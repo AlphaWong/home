@@ -2,10 +2,12 @@
 Store my configuration
 
 # macos
-```
-brew install httpie
-brew install gnu-sed grep
-export PATH="/usr/local/opt/grep/libexec/gnubin:/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
+```console
+brew install httpie pwgen gnu-sed grep tree zopfli mozjpeg
+brew cask install keka iterm2 font-go-mono-nerd-font font-jetbrains-mono
+
+# for grep
+export PATH="$(brew --prefix)/opt/grep/libexec/gnubin:$(brew --prefix)/opt/gnu-sed/libexec/gnubin:$PATH"
 ```
 
 # oh my zsh
