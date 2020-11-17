@@ -4,7 +4,7 @@ Store my configuration
 # macos
 ```console
 brew tap muesli/tap homebrew/cask-fonts
-brew install httpie pwgen gnu-sed grep tree zopfli mozjpeg duf pyenv tig 
+brew install httpie pwgen gnu-sed grep tree zopfli mozjpeg duf pyenv tig helm minikube
 brew cask install keka iterm2 font-go-mono-nerd-font font-jetbrains-mono sublime-text
 
 # for grep
