@@ -22,6 +22,8 @@ https://dnsprivacy.org/wiki/display/DP/DNS+Privacy+Test+Servers
 1. https://gist.github.com/uraimo/c651cbf3477994f95d8dbc7c60031697
 1. https://wiki.archlinux.org/index.php/Stubby
 
+config `/usr/local/etc/stubby/stubby.yml`
+
 reload `sudo brew services restart stubby`
 ```
 upstream_recursive_servers:
