@@ -50,9 +50,18 @@ upstream_recursive_servers:
       - digest: "sha256"
         value: V6zes8hHBVwUECsHf7uV5xGM7dj3uMXIS9//7qC8+jU=
 ```
+DoT
+```
+dns_transport_list:
+  - GETDNS_TRANSPORT_TLS
+  - GETDNS_TRANSPORT_UDP
+  - GETDNS_TRANSPORT_TCP
+tls_authentication: GETDNS_AUTHENTICATION_NONE
+```
+
 ### test
 1. https://dnsinstitute.com/documentation/dnssec-guide/ch03s02.html - dnssec
-1. https://superuser.com/questions/1532975/how-to-query-for-dns-over-https-dns-over-tls-using-command-line -DoT
+1. https://superuser.com/questions/1532975/how-to-query-for-dns-over-https-dns-over-tls-using-command-line - DoT
 ```console
 dnssec
 kdig 216.58.208.110 google.com A +dnssec +multiline
@@ -64,6 +73,7 @@ http://www.dnssec-tools.org/
 http://dnssec.vs.uni-due.de/
 
 DoT
+https://www.cloudflare.com/ssl/encrypted-sni/
 ```
 
 
