@@ -17,9 +17,11 @@ https://dnsprivacy.org/wiki/display/DP/Configuring+Stubby#ConfiguringStubby-DNSS
 ### config
 #### dns list
 https://dnsprivacy.org/wiki/display/DP/DNS+Privacy+Test+Servers
-#### example
+#### dns config example
 1. https://gist.github.com/alanbuxey/8713073e232adfd56198e8cd8ee1258b
 1. https://gist.github.com/uraimo/c651cbf3477994f95d8dbc7c60031697
+
+reload `sudo brew services restart stubby`
 ```
 upstream_recursive_servers:
   - address_data: 1.1.1.1
