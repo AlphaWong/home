@@ -10,49 +10,60 @@ brew cask install keka iterm2 font-go-mono-nerd-font font-jetbrains-mono sublime
 # for grep
 export PATH="$(brew --prefix)/opt/grep/libexec/gnubin:$(brew --prefix)/opt/gnu-sed/libexec/gnubin:$PATH"
 ```
-## dns-over-tls
+## dnssec & dns-over-tls
 ### install
 https://dnsprivacy.org/wiki/pages/viewpage.action?pageId=3145812
 https://dnsprivacy.org/wiki/display/DP/Configuring+Stubby#ConfiguringStubby-DNSSEC
 ### config
 #### dns list
 https://dnsprivacy.org/wiki/display/DP/DNS+Privacy+Test+Servers
-#### dns config example
+#### dnssec config example
 1. https://gist.github.com/alanbuxey/8713073e232adfd56198e8cd8ee1258b
 1. https://gist.github.com/uraimo/c651cbf3477994f95d8dbc7c60031697
+1. https://wiki.archlinux.org/index.php/Stubby
 
 reload `sudo brew services restart stubby`
 ```
 upstream_recursive_servers:
   - address_data: 1.1.1.1
+    tls_port: 853
     tls_auth_name: "cloudflare-dns.com"
     tls_pubkey_pinset:
       - digest: "sha256"
         value: V6zes8hHBVwUECsHf7uV5xGM7dj3uMXIS9//7qC8+jU=
   - address_data: 1.0.0.1
+    tls_port: 853
     tls_auth_name: "cloudflare-dns.com"
     tls_pubkey_pinset:
       - digest: "sha256"
         value: V6zes8hHBVwUECsHf7uV5xGM7dj3uMXIS9//7qC8+jU=
   - address_data: 2606:4700:4700::1111
+    tls_port: 853
     tls_auth_name: "cloudflare-dns.com"
     tls_pubkey_pinset:
       - digest: "sha256"
         value: V6zes8hHBVwUECsHf7uV5xGM7dj3uMXIS9//7qC8+jU=
   - address_data: 2606:4700:4700::1001
+    tls_port: 853
     tls_auth_name: "cloudflare-dns.com"
     tls_pubkey_pinset:
       - digest: "sha256"
         value: V6zes8hHBVwUECsHf7uV5xGM7dj3uMXIS9//7qC8+jU=
 ```
 ### test
-https://dnsinstitute.com/documentation/dnssec-guide/ch03s02.html
+1. https://dnsinstitute.com/documentation/dnssec-guide/ch03s02.html - dnssec
+1. https://superuser.com/questions/1532975/how-to-query-for-dns-over-https-dns-over-tls-using-command-line -DoT
 ```console
+dnssec
 kdig 216.58.208.110 google.com A +dnssec +multiline
+
+kdig -d @1.1.1.1 +tls-ca +tls-host=cloudflare-dns.com +dnssec example.com
 
 http://en.conn.internet.nl/connection/
 http://www.dnssec-tools.org/
 http://dnssec.vs.uni-due.de/
+
+DoT
 ```
 
 
