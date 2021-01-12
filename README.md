@@ -14,6 +14,35 @@ export PATH="$(brew --prefix)/opt/grep/libexec/gnubin:$(brew --prefix)/opt/gnu-s
 ### install
 https://dnsprivacy.org/wiki/pages/viewpage.action?pageId=3145812
 https://dnsprivacy.org/wiki/display/DP/Configuring+Stubby#ConfiguringStubby-DNSSEC
+### config
+#### dns list
+https://dnsprivacy.org/wiki/display/DP/DNS+Privacy+Test+Servers
+#### example
+1. https://gist.github.com/alanbuxey/8713073e232adfd56198e8cd8ee1258b
+1. https://gist.github.com/uraimo/c651cbf3477994f95d8dbc7c60031697
+```
+upstream_recursive_servers:
+  - address_data: 1.1.1.1
+    tls_auth_name: "cloudflare-dns.com"
+    tls_pubkey_pinset:
+      - digest: "sha256"
+        value: V6zes8hHBVwUECsHf7uV5xGM7dj3uMXIS9//7qC8+jU=
+  - address_data: 1.0.0.1
+    tls_auth_name: "cloudflare-dns.com"
+    tls_pubkey_pinset:
+      - digest: "sha256"
+        value: V6zes8hHBVwUECsHf7uV5xGM7dj3uMXIS9//7qC8+jU=
+  - address_data: 2606:4700:4700::1111
+    tls_auth_name: "cloudflare-dns.com"
+    tls_pubkey_pinset:
+      - digest: "sha256"
+        value: V6zes8hHBVwUECsHf7uV5xGM7dj3uMXIS9//7qC8+jU=
+  - address_data: 2606:4700:4700::1001
+    tls_auth_name: "cloudflare-dns.com"
+    tls_pubkey_pinset:
+      - digest: "sha256"
+        value: V6zes8hHBVwUECsHf7uV5xGM7dj3uMXIS9//7qC8+jU=
+```
 ### test
 https://dnsinstitute.com/documentation/dnssec-guide/ch03s02.html
 ```console
