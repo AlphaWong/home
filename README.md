@@ -11,10 +11,19 @@ brew cask install keka iterm2 font-go-mono-nerd-font font-jetbrains-mono sublime
 export PATH="$(brew --prefix)/opt/grep/libexec/gnubin:$(brew --prefix)/opt/gnu-sed/libexec/gnubin:$PATH"
 ```
 ## dns-over-tls
-```
+### install
 https://dnsprivacy.org/wiki/pages/viewpage.action?pageId=3145812
 https://dnsprivacy.org/wiki/display/DP/Configuring+Stubby#ConfiguringStubby-DNSSEC
+### test
+https://dnsinstitute.com/documentation/dnssec-guide/ch03s02.html
+```console
+kdig 216.58.208.110 google.com A +dnssec +multiline
+
+http://en.conn.internet.nl/connection/
+http://www.dnssec-tools.org/
+http://dnssec.vs.uni-due.de/
 ```
+
 
 # oh my zsh
 ## theme
