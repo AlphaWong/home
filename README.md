@@ -52,7 +52,7 @@ upstream_recursive_servers:
       - digest: "sha256"
         value: V6zes8hHBVwUECsHf7uV5xGM7dj3uMXIS9//7qC8+jU=
 ```
-DoT
+DoT ( bypass local resolver )
 ```
 dns_transport_list:
   - GETDNS_TRANSPORT_TLS
@@ -64,13 +64,14 @@ tls_authentication: GETDNS_AUTHENTICATION_NONE
 ### test
 1. https://dnsinstitute.com/documentation/dnssec-guide/ch03s02.html - dnssec
 1. https://superuser.com/questions/1532975/how-to-query-for-dns-over-https-dns-over-tls-using-command-line - DoT
+1. https://ns1.com/blog/using-dig-trace - using-dig-trace
 ```console
 dnssec
-kdig 216.58.208.110 google.com A +dnssec +multiline
+kdig 216.58.208.110 google.com A +dnssec +multiline +tls
 
 kdig -d @1.1.1.1 +tls-ca +tls-host=cloudflare-dns.com +dnssec example.com
 
-http://en.conn.internet.nl/connection/
+http://en.conn.int+traceernet.nl/connection/
 http://www.dnssec-tools.org/
 http://dnssec.vs.uni-due.de/
 
