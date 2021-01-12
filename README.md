@@ -10,6 +10,11 @@ brew cask install keka iterm2 font-go-mono-nerd-font font-jetbrains-mono sublime
 # for grep
 export PATH="$(brew --prefix)/opt/grep/libexec/gnubin:$(brew --prefix)/opt/gnu-sed/libexec/gnubin:$PATH"
 ```
+## dns-over-tls
+```
+https://dnsprivacy.org/wiki/pages/viewpage.action?pageId=3145812
+https://dnsprivacy.org/wiki/display/DP/Configuring+Stubby#ConfiguringStubby-DNSSEC
+```
 
 # oh my zsh
 ## theme
