@@ -4,13 +4,17 @@ Store my configuration
 # macos
 ```console
 brew tap muesli/tap homebrew/cask-fonts
-brew install httpie pwgen gnu-sed grep tree zopfli mozjpeg duf pyenv tig helm minikube ripgrep jq
+brew install httpie pwgen gnu-sed grep tree zopfli mozjpeg duf pyenv tig helm minikube ripgrep jq stubby
 brew cask install keka iterm2 font-go-mono-nerd-font font-jetbrains-mono sublime-text
 
 # for grep
 export PATH="$(brew --prefix)/opt/grep/libexec/gnubin:$(brew --prefix)/opt/gnu-sed/libexec/gnubin:$PATH"
 ```
 ## dnssec & dns-over-tls
+### quick start
+```
+https://gist.github.com/uraimo/c651cbf3477994f95d8dbc7c60031697
+```
 ### install
 https://dnsprivacy.org/wiki/pages/viewpage.action?pageId=3145812
 https://dnsprivacy.org/wiki/display/DP/Configuring+Stubby#ConfiguringStubby-DNSSEC
