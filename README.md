@@ -83,7 +83,7 @@ kdig 216.58.208.110 google.com A +dnssec +multiline +tls
 
 kdig -d @1.1.1.1 +tls-ca +tls-host=cloudflare-dns.com +dnssec example.com
 
-http://en.conn.int+traceernet.nl/connection/
+http://en.conn.internet.nl/connection/
 http://www.dnssec-tools.org/
 http://dnssec.vs.uni-due.de/
 
