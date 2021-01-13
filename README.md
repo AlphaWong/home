@@ -4,11 +4,16 @@ Store my configuration
 # macos
 ```console
 brew tap muesli/tap homebrew/cask-fonts
-brew install httpie pwgen gnu-sed grep tree zopfli mozjpeg duf pyenv tig helm minikube ripgrep jq stubby
+brew install coreutils findutils gnu-tar gnu-sed gawk gnutls gnu-indent gnu-getopt grep httpie pwgen tree zopfli mozjpeg duf pyenv tig helm minikube ripgrep jq stubby
 brew cask install keka iterm2 font-go-mono-nerd-font font-jetbrains-mono sublime-text
 
 # for grep
-export PATH="$(brew --prefix)/opt/grep/libexec/gnubin:$(brew --prefix)/opt/gnu-sed/libexec/gnubin:$PATH"
+# All commands have been installed with the prefix 'g'.
+export PATH="$(brew --prefix)/opt/grep/libexec/gnubin:$(brew --prefix)/opt/gnu-sed/libexec/gnubin:$(brew --prefix)/opt/coreutils/libexec/gnubin:$PATH"
+export MANPATH="(brew --prefix)/opt/coreutils/libexec/gnuman:$MANPATH"
+
+# ref
+https://apple.stackexchange.com/questions/69223/how-to-replace-mac-os-x-utilities-with-gnu-core-utilities
 ```
 ## dnssec & dns-over-tls
 ### quick start
@@ -158,6 +163,11 @@ $ ttygif myrecording -f
 
 # bash-it
 ```
+# theme
+ZSH_THEME=""
+autoload -U promptinit; promptinit
+prompt pure
+
 # Git alias
 EDITOR=vim
 alias vi="vim"
@@ -196,11 +206,24 @@ export GOPATH=$HOME/works
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 export GO111MODULE=on
 
+# php
+[[ -e ~/.phpbrew/bashrc ]] && source ~/.phpbrew/bashrc
+
 # http server
 alias http="python -m SimpleHTTPServer"
 
 # tools
 export PATH="/usr/local/opt/mozjpeg/bin:$PATH"
+
+# local
+export LC_CTYPE=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
+# gnu-coreutils
+# All commands have been installed with the prefix 'g'.
+export PATH="$(brew --prefix)/opt/grep/libexec/gnubin:$(brew --prefix)/opt/gnu-sed/libexec/gnubin:$(brew --prefix)/opt/coreutils/libexec/gnubin:$PATH"
+export MANPATH="(brew --prefix)/opt/coreutils/libexec/gnuman:$MANPATH"
 ```
 
 # ~/.config/powershell/profile.ps1
