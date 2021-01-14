@@ -4,7 +4,7 @@ Store my configuration
 # macos
 ```console
 brew tap muesli/tap homebrew/cask-fonts
-brew install coreutils findutils gnu-tar gnu-sed gawk gnutls gnu-indent gnu-getopt grep httpie pwgen tree zopfli mozjpeg duf pyenv tig helm minikube ripgrep jq stubby ncdu
+brew install coreutils findutils gnu-tar gnu-sed gawk gnutls gnu-indent gnu-getopt grep httpie pwgen tree zopfli mozjpeg duf pyenv tig helm minikube ripgrep jq stubby ncdu dnsmasq
 brew cask install keka iterm2 font-go-mono-nerd-font font-jetbrains-mono sublime-text
 
 # for grep
@@ -41,13 +41,30 @@ echo | openssl s_client -connect '1.1.1.1:853' 2>/dev/null | openssl x509 -pubke
 od9obscoXQND56/DikypZrJkXGvbQV5Y61QGfcNitHo=
 
 ```
-
-config `/usr/local/etc/stubby/stubby.yml`
-
+#### dnsmasq
+`sudo brew services start dnsmasq`
+```ini
+# $(brew --prefix)/etc/dnsmasq.conf
+# ref https://gist.github.com/ogrrd/5831371
+# ref https://wiki.archlinux.org/index.php/Stubby#dnsmasq
+no-resolv
+proxy-dnssec
+server=::1#53000
+server=127.0.0.1#53000
+listen-address=::1,127.0.0.1
+port=53
+```
+#### stubby
 reset dns `sudo /usr/local/sbin/stubby-setdns-macos.sh -r`
 
 reload `sudo brew services restart stubby`
-```
+```yaml
+# config `/usr/local/etc/stubby/stubby.yml`
+# ref https://wiki.archlinux.org/index.php/Stubby#dnsmasq
+listen_addresses:
+  - 127.0.0.1@53000
+  -  0::1@53000
+
 upstream_recursive_servers:
   - address_data: 1.1.1.1
     tls_port: 853
@@ -73,14 +90,6 @@ upstream_recursive_servers:
     tls_pubkey_pinset:
       - digest: "sha256"
         value: od9obscoXQND56/DikypZrJkXGvbQV5Y61QGfcNitHo=
-```
-DoT ( bypass local resolver )
-```
-dns_transport_list:
-  - GETDNS_TRANSPORT_TLS
-  - GETDNS_TRANSPORT_UDP
-  - GETDNS_TRANSPORT_TCP
-tls_authentication: GETDNS_AUTHENTICATION_NONE
 ```
 
 ### test
