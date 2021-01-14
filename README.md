@@ -33,8 +33,18 @@ https://dnsprivacy.org/wiki/display/DP/DNS+Privacy+Test+Servers
 1. https://gist.github.com/alanbuxey/8713073e232adfd56198e8cd8ee1258b
 1. https://gist.github.com/uraimo/c651cbf3477994f95d8dbc7c60031697
 1. https://wiki.archlinux.org/index.php/Stubby
+#### get latest cf key
+```sh
+ref: https://github.com/getdnsapi/stubby/issues/87#issuecomment-377929340
+
+echo | openssl s_client -connect '1.1.1.1:853' 2>/dev/null | openssl x509 -pubkey -noout | openssl pkey -pubin -outform der | openssl dgst -sha256 -binary | openssl enc -base64
+od9obscoXQND56/DikypZrJkXGvbQV5Y61QGfcNitHo=
+
+```
 
 config `/usr/local/etc/stubby/stubby.yml`
+
+reset dns `sudo /usr/local/sbin/stubby-setdns-macos.sh -r`
 
 reload `sudo brew services restart stubby`
 ```
@@ -44,25 +54,25 @@ upstream_recursive_servers:
     tls_auth_name: "cloudflare-dns.com"
     tls_pubkey_pinset:
       - digest: "sha256"
-        value: V6zes8hHBVwUECsHf7uV5xGM7dj3uMXIS9//7qC8+jU=
+        value: od9obscoXQND56/DikypZrJkXGvbQV5Y61QGfcNitHo=
   - address_data: 1.0.0.1
     tls_port: 853
     tls_auth_name: "cloudflare-dns.com"
     tls_pubkey_pinset:
       - digest: "sha256"
-        value: V6zes8hHBVwUECsHf7uV5xGM7dj3uMXIS9//7qC8+jU=
+        value: od9obscoXQND56/DikypZrJkXGvbQV5Y61QGfcNitHo=
   - address_data: 2606:4700:4700::1111
     tls_port: 853
     tls_auth_name: "cloudflare-dns.com"
     tls_pubkey_pinset:
       - digest: "sha256"
-        value: V6zes8hHBVwUECsHf7uV5xGM7dj3uMXIS9//7qC8+jU=
+        value: od9obscoXQND56/DikypZrJkXGvbQV5Y61QGfcNitHo=
   - address_data: 2606:4700:4700::1001
     tls_port: 853
     tls_auth_name: "cloudflare-dns.com"
     tls_pubkey_pinset:
       - digest: "sha256"
-        value: V6zes8hHBVwUECsHf7uV5xGM7dj3uMXIS9//7qC8+jU=
+        value: od9obscoXQND56/DikypZrJkXGvbQV5Y61QGfcNitHo=
 ```
 DoT ( bypass local resolver )
 ```
