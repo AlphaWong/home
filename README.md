@@ -45,6 +45,10 @@ od9obscoXQND56/DikypZrJkXGvbQV5Y61QGfcNitHo=
 `sudo brew services start dnsmasq`
 ```ini
 # $(brew --prefix)/etc/dnsmasq.conf
+# ref https://netbeez.net/blog/linux-dns-caching-dnsmasq/
+cache-size=150
+no-negcache
+
 # ref https://gist.github.com/ogrrd/5831371
 # ref https://wiki.archlinux.org/index.php/Stubby#dnsmasq
 no-resolv
