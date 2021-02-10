@@ -4,7 +4,8 @@ Store my configuration
 # macos
 ```console
 brew tap muesli/tap homebrew/cask-fonts
-brew install coreutils findutils gnu-tar gnu-sed gawk gnutls gnu-indent gnu-getopt grep httpie pwgen tree zopfli mozjpeg duf pyenv tig helm minikube ripgrep jq stubby ncdu dnsmasq curl-openssl
+brew rm curl && brew install curl-openssl
+brew install coreutils findutils gnu-tar gnu-sed gawk gnutls gnu-indent gnu-getopt grep httpie pwgen tree zopfli mozjpeg duf pyenv tig helm minikube ripgrep jq stubby ncdu dnsmasq 
 brew cask install keka iterm2 font-go-mono-nerd-font font-jetbrains-mono sublime-text
 
 # for grep
