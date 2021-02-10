@@ -10,7 +10,7 @@ brew cask install keka iterm2 font-go-mono-nerd-font font-jetbrains-mono sublime
 
 # for grep
 # All commands have been installed with the prefix 'g'.
-export PATH="$(brew --prefix)/opt/grep/libexec/gnubin:$(brew --prefix)/opt/gnu-sed/libexec/gnubin:$(brew --prefix)/opt/coreutils/libexec/gnubin:$PATH"
+export PATH="$(brew --prefix)/opt/grep/libexec/gnubin:$(brew --prefix)/opt/gnu-sed/libexec/gnubin:$(brew --prefix)/opt/coreutils/libexec/gnubin:/usr/local/opt/curl/bin:$PATH"
 export MANPATH="(brew --prefix)/opt/coreutils/libexec/gnuman:$MANPATH"
 
 # ref
