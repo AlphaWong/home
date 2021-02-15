@@ -5,7 +5,7 @@ Store my configuration
 ```console
 brew tap muesli/tap homebrew/cask-fonts
 brew rm curl && brew install curl-openssl
-brew install coreutils findutils gnu-tar gnu-sed gawk gnutls gnu-indent gnu-getopt grep httpie pwgen tree zopfli mozjpeg duf pyenv tig helm minikube ripgrep jq stubby ncdu dnsmasq zlib bzip2 libiconv libzip
+brew install coreutils findutils gnu-tar gnu-sed gawk gnutls gnu-indent gnu-getopt grep httpie pwgen tree zopfli mozjpeg duf pyenv tig helm minikube ripgrep jq stubby ncdu dnsmasq zlib bzip2 libiconv libzip imap-uw libedit
 brew cask install keka iterm2 font-go-mono-nerd-font font-jetbrains-mono sublime-text
 brew --prefix bzip2
 
