@@ -6,8 +6,7 @@ Store my configuration
 brew tap muesli/tap homebrew/cask-fonts
 brew rm curl && brew install curl-openssl
 brew install coreutils findutils gnu-tar gnu-sed gawk gnutls gnu-indent gnu-getopt grep httpie pwgen tree zopfli mozjpeg duf pyenv tig helm minikube ripgrep jq stubby ncdu dnsmasq zlib bzip2 libiconv libzip imap-uw libedit
-brew cask install keka iterm2 font-go-mono-nerd-font font-jetbrains-mono sublime-text
-brew --prefix bzip2
+brew install --cask keka iterm2 font-go-mono-nerd-font font-jetbrains-mono sublime-text
 
 # for grep
 # All commands have been installed with the prefix 'g'.
@@ -116,6 +115,10 @@ DoT
 https://www.cloudflare.com/ssl/encrypted-sni/
 ```
 
+# php
+```console
+phpbrew install 8.0.2 +default +dbs +curl
+```
 
 # oh my zsh
 ## theme
