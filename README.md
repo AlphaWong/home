@@ -226,6 +226,8 @@ alias vi=vim
 # alias cat=ccat
 alias fzf="fzf --preview 'cat -n {}'"
 alias mi="micro"
+alias composer="composer.phar"
+alias gg="gitmoji"
 
 export EDITOR='vim' 
 export VISUAL='vim'
@@ -258,6 +260,8 @@ export LANG=en_US.UTF-8
 # All commands have been installed with the prefix 'g'.
 export PATH="$(brew --prefix)/opt/grep/libexec/gnubin:$(brew --prefix)/opt/gnu-sed/libexec/gnubin:$(brew --prefix)/opt/coreutils/libexec/gnubin:$PATH"
 export MANPATH="(brew --prefix)/opt/coreutils/libexec/gnuman:$MANPATH"
+export PATH="/usr/local/sbin:$PATH"
+export PATH="/usr/local/opt/curl/bin:$PATH"
 ```
 
 # ~/.config/powershell/profile.ps1
