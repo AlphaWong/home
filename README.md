@@ -242,6 +242,11 @@ export GOPATH=$HOME/works
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 export GO111MODULE=on
 
+# py
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init --path)"
+
 # php
 [[ -e ~/.phpbrew/bashrc ]] && source ~/.phpbrew/bashrc
 
