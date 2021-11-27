@@ -25,6 +25,7 @@ echo 'export PATH="$(brew --prefix)/opt/gnu-sed/libexec/gnubin:$PATH"' >> ~/.zsh
 echo 'export PATH="$(brew --prefix)/opt/coreutils/libexec/gnubin:$PATH"' >> ~/.zshrc
 echo 'export PATH="$(brew --prefix)/opt/libiconv/bin:$PATH"' >> ~/.zshrc
 echo 'export PATH="$(brew --prefix)/opt/curl/bin:$PATH"' >> ~/.zshrc
+echo 'export PATH="$(brew --prefix)/opt/git/bin:$PATH"' >> ~/.zshrc
 echo 'MANPATH="$(brew --prefix)/opt/coreutils/libexec/gnuman:$MANPATH"' >> ~/.zshrc
 
 # ref
@@ -284,6 +285,7 @@ export PATH="$(brew --prefix)/opt/coreutils/libexec/gnubin:$PATH"
 export PATH="$(brew --prefix)/opt/libiconv/bin:$PATH"
 export PATH="$(brew --prefix)/opt/bzip2/bin:$PATH"
 export PATH="$(brew --prefix)/opt/curl/bin:$PATH"
+export PATH="$(brew --prefix)/opt/git/bin:$PATH"
 ```
 
 # ~/.config/powershell/profile.ps1
