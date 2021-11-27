@@ -9,7 +9,7 @@ https://superuser.com/a/1689758/1644368
 brew tap muesli/tap && brew tap homebrew/cask-fonts && brew tap ringohub/redis-cli
 brew rm curl && brew install curl-openssl
 brew install git coreutils findutils gnu-tar gnu-sed gawk gnutls gnu-indent gnu-getopt grep httpie pwgen tree zopfli mozjpeg duf pyenv tig helm minikube ripgrep jq  ncdu zlib bzip2 libiconv libzip imap-uw libedit gitmoji redis-cli
-brew install --cask keka iterm2 font-go-mono-nerd-font font-jetbrains-mono font-caskaydia-cove-nerd-font sublime-text
+brew install --cask keka iterm2 font-go-mono-nerd-font font-jetbrains-mono font-caskaydia-cove-nerd-font sublime-text visual-studio-code
 
 # optional
 brew install stubby dnsmasq
