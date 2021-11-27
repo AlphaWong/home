@@ -16,8 +16,16 @@ brew install stubby dnsmasq
 
 # for grep
 # All commands have been installed with the prefix 'g'.
-export PATH="$(brew --prefix)/opt/grep/libexec/gnubin:$(brew --prefix)/opt/gnu-sed/libexec/gnubin:$(brew --prefix)/opt/coreutils/libexec/gnubin:/usr/local/opt/curl/bin:$PATH"
-export MANPATH="(brew --prefix)/opt/coreutils/libexec/gnuman:$MANPATH"
+echo 'export PATH="$(brew --prefix)/opt/libiconv/bin:$PATH"' >> ~/.zshrc
+echo 'export PATH="$(brew --prefix)/opt/bzip2/bin:$PATH"' >> ~/.zshrc
+echo 'export PATH="$(brew --prefix)/opt/mozjpeg/bin:$PATH"' >> ~/.zshrc
+echo 'export PATH="$(brew --prefix)/opt/gnu-getopt/bin:$PATH"' >> ~/.zshrc
+echo 'export PATH="$(brew --prefix)/opt/gnu-indent/libexec/gnubin:$PATH"' >> ~/.zshrc
+echo 'export PATH="$(brew --prefix)/opt/gnu-sed/libexec/gnubin:$PATH"' >> ~/.zshrc
+echo 'export PATH="$(brew --prefix)/opt/coreutils/libexec/gnubin:$PATH"' >> ~/.zshrc
+echo 'export PATH="$(brew --prefix)/opt/libiconv/bin:$PATH"' >> ~/.zshrc
+echo 'export PATH="$(brew --prefix)/opt/curl/bin:$PATH"' >> ~/.zshrc
+echo 'MANPATH="$(brew --prefix)/opt/coreutils/libexec/gnuman:$MANPATH"' >> ~/.zshrc
 
 # ref
 https://apple.stackexchange.com/questions/69223/how-to-replace-mac-os-x-utilities-with-gnu-core-utilities
@@ -266,10 +274,16 @@ export LANG=en_US.UTF-8
 
 # gnu-coreutils
 # All commands have been installed with the prefix 'g'.
-export PATH="$(brew --prefix)/opt/grep/libexec/gnubin:$(brew --prefix)/opt/gnu-sed/libexec/gnubin:$(brew --prefix)/opt/coreutils/libexec/gnubin:$PATH"
-export MANPATH="(brew --prefix)/opt/coreutils/libexec/gnuman:$MANPATH"
-export PATH="/usr/local/sbin:$PATH"
-export PATH="/usr/local/opt/curl/bin:$PATH"
+export PATH="$(brew --prefix)/opt/libiconv/bin:$PATH"
+export PATH="$(brew --prefix)/opt/bzip2/bin:$PATH"
+export PATH="$(brew --prefix)/opt/mozjpeg/bin:$PATH"
+export PATH="$(brew --prefix)/opt/gnu-getopt/bin:$PATH"
+export PATH="$(brew --prefix)/opt/gnu-indent/libexec/gnubin:$PATH"
+export PATH="$(brew --prefix)/opt/gnu-sed/libexec/gnubin:$PATH"
+export PATH="$(brew --prefix)/opt/coreutils/libexec/gnubin:$PATH"
+export PATH="$(brew --prefix)/opt/libiconv/bin:$PATH"
+export PATH="$(brew --prefix)/opt/bzip2/bin:$PATH"
+export PATH="$(brew --prefix)/opt/curl/bin:$PATH"
 ```
 
 # ~/.config/powershell/profile.ps1
