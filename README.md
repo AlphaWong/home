@@ -3,8 +3,17 @@ Store my configuration
 
 # macos
 ## install brew without root
+```console
+cd ~
+git clone https://github.com/Homebrew/brew homebrew
+mkdir ~/usr/local
+# installed packaged directory
+echo "export HOMEBREW_PREFIX=~/usr/local" >> ~/.zshrc
+echo "export PATH=$PATH:~/homebrew/bin:HOMEBREW_PREFIX/bin" >> ~/.zshrc
+```
 https://superuser.com/a/1689758/1644368
 ## install openJDK
+`export JAVA_HOME=<jdk_location>`
 1. https://www.azul.com/downloads/?package=jdk#download-openjdk
 1. https://adoptium.net/index.html
 1. https://docs.microsoft.com/en-us/java/openjdk/download
