@@ -4,6 +4,11 @@ Store my configuration
 # macos
 ## install brew without root
 https://superuser.com/a/1689758/1644368
+## install openJDK
+1. https://www.azul.com/downloads/?package=jdk#download-openjdk
+1. https://adoptium.net/index.html
+1. https://docs.microsoft.com/en-us/java/openjdk/download
+1. https://devblogs.microsoft.com/java/end-of-updates-support-and-availability-of-zulu-for-azure/
 ## main packages
 ```console
 brew tap muesli/tap && brew tap homebrew/cask-fonts && brew tap ringohub/redis-cli
