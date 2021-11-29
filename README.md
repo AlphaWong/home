@@ -13,6 +13,10 @@ echo "export PATH=$PATH:~/homebrew/bin:HOMEBREW_PREFIX/bin" >> ~/.zshrc
 ```
 https://superuser.com/a/1689758/1644368
 ## install openJDK
+```console
+# 101 https://sdkman.io/usage
+curl -s https://get.sdkman.io | bash
+```
 `export JAVA_HOME=<jdk_location>`
 1. https://www.azul.com/downloads/?package=jdk#download-openjdk
 1. https://adoptium.net/index.html
