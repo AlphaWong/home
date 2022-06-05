@@ -507,6 +507,7 @@ plugins=(git bundler osx rake ruby thefuck)
 1. https://github.com/mozilla/mozjpeg (jpg)
    1. install `pacaur -S mozjpeg`
    1. run `cjpeg -optimize in.png > out.jpg `
+   1. `ls ./*.jpg|xargs -I@ cjpeg -quality 10 -outfile ./out/@ @` to loop all
    1. `brew install mozjpeg`
 1. cwebp (webp)
 1. ```brew install guetzli```
