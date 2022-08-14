@@ -26,7 +26,7 @@ curl -s https://get.sdkman.io | bash
 ```console
 brew tap muesli/tap && brew tap homebrew/cask-fonts && brew tap ringohub/redis-cli
 brew rm curl && brew install curl-openssl
-brew install git coreutils findutils gnu-tar gnu-sed gawk gnutls gnu-indent gnu-getopt grep httpie pwgen tree zopfli mozjpeg duf pyenv tig helm minikube ripgrep jq ncdu zlib bzip2 libiconv libzip imap-uw libedit gitmoji redis-cli tfenv kubectl rclone logstalgia gnu-time shellcheck entr z
+brew install git coreutils findutils gnu-tar gnu-sed gawk gnutls gnu-indent gnu-getopt grep httpie pwgen tree zopfli mozjpeg duf pyenv tig helm minikube ripgrep jq ncdu zlib bzip2 libiconv libzip imap-uw libedit gitmoji redis-cli tfenv kubectl rclone logstalgia gnu-time shellcheck entr z tfenv
 brew install --cask keka iterm2 font-go-mono-nerd-font font-jetbrains-mono font-caskaydia-cove-nerd-font sublime-text visual-studio-code dbeaver-community sourcetree insomnia postman google-chrome eloston-chromium imageoptim
 
 # git stat
@@ -271,15 +271,19 @@ export VISUAL='vim'
 # export WINDOWID=$(xdotool getwindowfocus)
 
 # Go
-export GOROOT=$HOME/go
 export GOPATH=$HOME/works
+export GOENV_ROOT="$HOME/.goenv"
+eval "$(goenv init -)"
+export PATH="$GOENV_ROOT/bin:$PATH"
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
-export GO111MODULE=on
 
 # py
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init --path)"
+
+# tf
+export PATH="$HOME/.tfenv/bin:$PATH"
 
 # php
 [[ -e ~/.phpbrew/bashrc ]] && source ~/.phpbrew/bashrc
