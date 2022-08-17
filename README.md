@@ -26,8 +26,16 @@ curl -s https://get.sdkman.io | bash
 ```console
 brew tap muesli/tap && brew tap homebrew/cask-fonts && brew tap ringohub/redis-cli
 brew rm curl && brew install curl-openssl
-brew install git coreutils findutils gnu-tar gnu-sed gawk gnutls gnu-indent gnu-getopt grep httpie pwgen tree zopfli mozjpeg duf pyenv tig helm minikube ripgrep jq ncdu zlib bzip2 libiconv libzip imap-uw libedit gitmoji redis-cli tfenv kubectl rclone logstalgia gnu-time shellcheck entr z tfenv
+brew install git coreutils findutils gnu-tar gnu-sed gawk gnutls gnu-indent gnu-getopt grep httpie pwgen tree zopfli mozjpeg duf pyenv tig helm minikube ripgrep jq ncdu zlib bzip2 libiconv libzip imap-uw libedit gitmoji redis-cli tfenv kubectl rclone logstalgia gnu-time shellcheck entr z tfenv pwgen
 brew install --cask keka iterm2 font-go-mono-nerd-font font-jetbrains-mono font-caskaydia-cove-nerd-font sublime-text visual-studio-code dbeaver-community sourcetree insomnia postman google-chrome eloston-chromium imageoptim crunch
+
+# npm
+npm i -g @squoosh/cli
+npm install -g tldr
+npm i -g whistle && w2 start --init
+
+# py
+pip install diagrams
 
 # git stat
 ## reference https://github.com/casperdcl/git-fame
@@ -78,62 +86,6 @@ ref: https://github.com/getdnsapi/stubby/issues/87#issuecomment-377929340
 echo | openssl s_client -connect '1.1.1.1:853' 2>/dev/null | openssl x509 -pubkey -noout | openssl pkey -pubin -outform der | openssl dgst -sha256 -binary | openssl enc -base64
 od9obscoXQND56/DikypZrJkXGvbQV5Y61QGfcNitHo=
 
-```
-#### dnsmasq
-`sudo brew services start dnsmasq`
-```ini
-# $(brew --prefix)/etc/dnsmasq.conf
-# ref https://netbeez.net/blog/linux-dns-caching-dnsmasq/
-cache-size=150
-no-negcache
-
-# ref https://gist.github.com/ogrrd/5831371
-# ref https://wiki.archlinux.org/index.php/Stubby#dnsmasq
-no-resolv
-proxy-dnssec
-server=::1#53000
-server=127.0.0.1#53000
-listen-address=::1,127.0.0.1
-port=53
-```
-#### stubby
-reset dns `sudo /usr/local/sbin/stubby-setdns-macos.sh -r`
-
-reload `sudo brew services restart stubby`
-```yaml
-# config `/usr/local/etc/stubby/stubby.yml`
-# ref https://wiki.archlinux.org/index.php/Stubby#dnsmasq
-listen_addresses:
-  - 127.0.0.1@53000
-  -  0::1@53000
-
-upstream_recursive_servers:
-  - address_data: 1.1.1.1
-    tls_port: 853
-    tls_auth_name: "cloudflare-dns.com"
-    tls_pubkey_pinset:
-      - digest: "sha256"
-        value: od9obscoXQND56/DikypZrJkXGvbQV5Y61QGfcNitHo=
-  - address_data: 1.0.0.1
-    tls_port: 853
-    tls_auth_name: "cloudflare-dns.com"
-    tls_pubkey_pinset:
-      - digest: "sha256"
-        value: od9obscoXQND56/DikypZrJkXGvbQV5Y61QGfcNitHo=
-  - address_data: 2606:4700:4700::1111
-    tls_port: 853
-    tls_auth_name: "cloudflare-dns.com"
-    tls_pubkey_pinset:
-      - digest: "sha256"
-        value: od9obscoXQND56/DikypZrJkXGvbQV5Y61QGfcNitHo=
-  - address_data: 2606:4700:4700::1001
-    tls_port: 853
-    tls_auth_name: "cloudflare-dns.com"
-    tls_pubkey_pinset:
-      - digest: "sha256"
-        value: od9obscoXQND56/DikypZrJkXGvbQV5Y61QGfcNitHo=
-```
-
 ### test
 1. https://dnsinstitute.com/documentation/dnssec-guide/ch03s02.html - dnssec
 1. https://superuser.com/questions/1532975/how-to-query-for-dns-over-https-dns-over-tls-using-command-line - DoT
@@ -176,7 +128,7 @@ brew cask install font-go-mono-nerd-font
 openssl rand -base64 14
 
 brew install pwgen
-pwgen -sy 10 1
+pwgen -sBy 10 1
 ```
 
 # ssh
