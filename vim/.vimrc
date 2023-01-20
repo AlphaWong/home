@@ -111,7 +111,7 @@ let g:go_fmt_command = "goimports"
 " Set vim theme
 " colorscheme onedark
 set background=dark
-set spell spelllang=en_us
+"set spell spelllang=en_us
 
 let g:ale_linters = {
 \   'javascript': ['standard'],
