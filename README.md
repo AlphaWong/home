@@ -121,6 +121,7 @@ https://github.com/juliuscaesar/unicorn
 ## prompt
 1. https://github.com/starship/starship
 1. https://github.com/sindresorhus/pure
+1. https://dev.to/abdfnx/oh-my-zsh-powerlevel10k-cool-terminal-1no0
 ## font
 1. https://github.com/ryanoasis/nerd-fonts
 ### command
