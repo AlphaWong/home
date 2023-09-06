@@ -188,8 +188,8 @@ On OSX optionally you can set a -f flag which will bypass cropping which is need
 $ ttygif myrecording -f
 ```
 
-# bash-it
-```
+# .zshrc
+```console
 # theme
 ZSH_THEME=""
 autoload -U promptinit; promptinit
@@ -212,6 +212,9 @@ alias gup="git pull --rebase"
 
 # k8s
 alias kk="kubectl"
+
+# show all fonts
+alias show_fonts='system_profiler -json SPFontsDataType | grep \"family | sort | uniq'
 
 # Alias
 alias vi=vim
