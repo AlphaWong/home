@@ -27,7 +27,7 @@ curl -s https://get.sdkman.io | bash
 1. https://devblogs.microsoft.com/java/end-of-updates-support-and-availability-of-zulu-for-azure/
 ## main packages
 ```console
-brew tap muesli/tap && brew tap homebrew/cask-fonts && brew tap ringohub/redis-cli
+brew tap muesli/tap && brew tap homebrew/cask-fonts && brew tap ringohub/redis-cli buo/cask-upgrade
 brew rm curl && brew install curl-openssl
 brew install git coreutils findutils gnu-tar gnu-sed gawk gnutls gnu-indent gnu-getopt grep httpie pwgen tree zopfli mozjpeg duf pyenv tig helm minikube ripgrep jq ncdu zlib bzip2 libiconv libzip imap-uw libedit gitmoji redis-cli tfenv kubectl rclone logstalgia gnu-time shellcheck entr z tfenv pwgen
 brew install --cask keka iterm2 sublime-text visual-studio-code dbeaver-community sourcetree insomnia postman google-chrome eloston-chromium imageoptim crunch mockoon devtoys
