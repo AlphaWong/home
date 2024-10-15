@@ -15,6 +15,13 @@ echo "export PATH=$PATH:~/homebrew/bin:HOMEBREW_PREFIX/bin" >> ~/.zshrc
 brew --prefix
 ```
 https://superuser.com/a/1689758/1644368
+
+## shellcheck
+```console
+shellcheck -f diff $file | git apply
+```
+https://github.com/koalaman/shellcheck/issues/1220#issuecomment-594811243
+
 ## install openJDK
 ```console
 # 101 https://sdkman.io/usage
