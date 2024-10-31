@@ -401,6 +401,11 @@ Install Plugins:
 :GoInstallBinaries
 ```
 
+# vim colors
+```sh
+curl -o ~/.vim/colors/desert256.vim https://raw.githubusercontent.com/brafales/vim-desert256/refs/heads/master/colors/desert256.vim
+```
+
 # vim tree
 https://github.com/scrooloose/nerdtree
 
