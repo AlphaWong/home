@@ -83,7 +83,7 @@ Plugin 'sheerun/vim-polyglot'
 
 Plugin 'joshdick/onedark.vim'
 
-Plugin 'w0rp/ale'
+Plugin 'dense-analysis/al'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
