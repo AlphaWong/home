@@ -10,6 +10,9 @@ set t_Co=256
 " Fix keyboard issue
 set term=xterm
 
+colorscheme desert256
+set background=dark
+
 " Fix the backspace feature
 set autoread
 set backspace=indent,eol,start
@@ -67,7 +70,7 @@ Plugin 'google/vim-codefmt'
 " `:help :Glaive` for usage.
 Plugin 'google/vim-glaive'
 
-Plugin 'Yggdroot/indentLine'
+Plugin 'nathanaelkane/vim-indent-guides'
 
 Plugin 'fatih/vim-go'
 
@@ -140,3 +143,6 @@ let g:graphql_javascript_tags = []
 " disable markdown hidden
 let g:vim_json_syntax_conceal = 0
 let g:vim_markdown_conceal = 0
+
+" show space 
+let g:indent_guides_enable_on_vim_startup = 1
