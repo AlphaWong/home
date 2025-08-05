@@ -61,6 +61,7 @@
   excludesfile = /Users/$(whoami)/.gitignore_global
   trustExitCode = true
   pager = diff-so-fancy | less --tabs=4 -RFX
+  ignorecase = false
 [commit]
   template = /Users/$whoami/.stCommitMsg
 [color "diff-highlight"]
