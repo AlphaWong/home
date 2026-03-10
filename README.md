@@ -37,7 +37,7 @@ curl -s https://get.sdkman.io | bash
 brew tap muesli/tap && brew tap ringohub/redis-cli && brew tap buo/cask-upgrade
 brew rm curl && brew install curl-openssl
 brew install git mole coreutils findutils gnu-tar gnu-sed gawk gnutls gnu-indent gnu-getopt grep httpie pwgen tree zopfli mozjpeg duf pyenv tig helm minikube ripgrep jq yq ncdu zlib bzip2 libiconv libzip imap-uw libedit gitmoji redis-cli tfenv kubectl rclone logstalgia gnu-time shellcheck entr z tfenv pwgen
-brew install --cask keka iterm2 sublime-text visual-studio-code dbeaver-community sourcetree insomnia postman google-chrome eloston-chromium imageoptim crunch mockoon devtoys bruno
+brew install --cask itsycal keka iterm2 sublime-text visual-studio-code dbeaver-community sourcetree insomnia postman google-chrome eloston-chromium imageoptim crunch mockoon devtoys bruno
 
 # font
 brew install --cask font-go-mono-nerd-font font-jetbrains-mono-nerd-font font-caskaydia-cove-nerd-font font-terminess-ttf-nerd-font font-3270-nerd-font font-blex-mono-nerd-font font-bigblue-terminal-nerd-font font-redhat
