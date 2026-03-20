@@ -41,6 +41,9 @@
   a = add
   d = diff --word-diff
 
+[diff]
+  external = difft
+
 [apply]
   whitespace = strip
 
