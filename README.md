@@ -16,6 +16,11 @@ brew --prefix
 ```
 https://superuser.com/a/1689758/1644368
 
+## fonts
+```bash
+curl -fsSL https://raw.githubusercontent.com/getnf/getnf/main/install.sh | bash
+```
+
 ## shellcheck
 ```console
 shellcheck -f diff $file | git apply
